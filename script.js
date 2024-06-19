@@ -398,3 +398,66 @@ if (nombreDeUsuario) {
   console.log("Hola extraño! bienvenido")
 }
 
+
+
+
+// Loops
+
+
+// for
+
+
+// hacemos una accion repetida 10 veces
+
+
+/* 
+for (inicializamosVariableControl; condicionDeEjecucionDelBucle; manipulamosLaVariableControl ) {
+
+  el código a ejecutar X cantidad de veces
+
+}
+*/
+
+for ( let miVariable = 0; miVariable < 10;  miVariable = miVariable + 1) {
+
+  // 1. Solo se ejecuta una vez. 
+  // let miVariable = 0
+
+  // 2. ocurre siemple al principio de cada iteración del bucle
+  // if (miVariable < 10) continua el bucle
+
+  console.log("patata", miVariable)
+
+
+  // 3. al final el código que se haya ejecutado
+  // miVariable = miVariable + 1
+  // vuelve a iniciar el bucle
+}
+
+
+for ( let i = 100; i > 0; i-- ) {
+  console.log(i)
+}
+
+
+// como usar loops para iterar sobre strings
+
+
+let encodedWord = "B?!*??!n!!*!n?!*?!? !w1!w??!k!o???o!!";
+
+// cuantos ? hay en este string.
+let contador = 0;
+
+for (let i = 0; i < encodedWord.length; i++) {
+  // console.log(i)
+  // console.log(encodedWord[i])
+  if (encodedWord[i] === "?") {
+    console.log("encontré un: ?")
+    contador++
+  }
+
+}
+
+
+
+console.log(`existen ${contador} de "?" en el string`)
